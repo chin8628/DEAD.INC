@@ -1,4 +1,5 @@
 <footer class="container text-right ">
+    <hr>
     <a href="#">About</a> |
     <a href="#">Credits</a>
 </footer>
