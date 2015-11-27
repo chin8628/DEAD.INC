@@ -3,8 +3,7 @@
 
         <title>DEAD .INC</title>
 
-        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="asset/css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="asset/css/bootstrap.min.css" />
         <link type="text/css" rel="stylesheet" href="asset/css/style.css" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -12,19 +11,68 @@
     </head>
 
     <body>
-        <section class="container index ">
 
-        <h1>Thailand</h1>
+        <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+            <div class="container-fluid container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        DEAD Inc.
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+
+        <section class="container index">
+
+            <h1 class="title">Thailand<hr></h1>
+
+            <div class="row">
+                <div class="world-map col-md-10 col-md-offset-1">
+                    <img src="asset/img/world.png" width="100%">
+                </div>
+            </div>
+
+            <article class="container graph">
+
+                <div>
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Crude Deaths</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Under-five Deaths</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Injury Deaths</a></li>
+                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Battle-related deaths</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content container">
+                        <div role="tabpanel" class="tab-pane active" id="home">...213</div>
+                        <div role="tabpanel" class="tab-pane" id="profile">..13.</div>
+                        <div role="tabpanel" class="tab-pane" id="messages">...123</div>
+                        <div role="tabpanel" class="tab-pane" id="settings">...123</div>
+                    </div>
+
+                </div>
+
+            </article>
 
         </section>
+
+        <footer class="container text-right ">
+                <a href="#">About</a> |
+                <a href="#">Credits</a>
+        </footer>
+
     </body>
 
-    <footer class="container right-align">
-        <a href="#">About</a> |
-        <a href="#">Credits</a>
-    </footer>
-
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="asset/js/materialize.min.js"></script>
+    <script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
 
 </html>
