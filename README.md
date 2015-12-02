@@ -11,6 +11,6 @@ sudo easy_install web.py
 ### Run server
 1. Run command
 ```
-# Default port is 8080
+# Default port is 8080 and online on http://localhost/
 python index.py <port>
 ```
