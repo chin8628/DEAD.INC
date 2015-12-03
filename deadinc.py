@@ -15,11 +15,13 @@ class Index:
         return render.index()
     def POST(self):
         country = web.input()
-        return render.result(country.country)
+        image = country.country.lower() + ".svg"
+        return render.result(country.country, image)
 
 class Result:
     def GET(self, country="Thailand"):
-        return render.result(country)
+        image = country.lower() + ".svg"
+        return render.result(country, image)
 
 class Country:
     def GET(self, name=None):
