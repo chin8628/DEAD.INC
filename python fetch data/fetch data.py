@@ -4,9 +4,9 @@ for filename in xmlfilename:
     tree = ET.parse("DEAD_INC_downloaded_country/"+filename)
     root = tree.getroot()
     lis = [[] for i in range(7)]
-    do_list = ["SH.DTH.COMM.ZS", "SH.DTH.MORT", "SP.POP.TOTL", \
+    do_list = ["SH.DTH.COMM.ZS", "SH.DTH.MORT", \
                "VC.BTL.DETH", "SH.DTH.NCOM.ZS", "SH.DTH.INJR.ZS"\
-               , "SH.DTH.COMM.ZS"]
+               , "SH.DTH.COMM.ZS", "SP.POP.TOTL"]
     for home in root.findall('data'):
         for record in home.findall('record'):
             for do in range(7):
@@ -17,18 +17,3 @@ for filename in xmlfilename:
                         lis[do].append("-1")
     for i in lis:
         print(i)
-
-
-
-
-
-
-
-##print(type(home))
-##print(root[0][0][0].text)
-##print(root[0][0][0].get('key'))
-##print(root[0][0][1].text)
-##print(root[0][0][1].get('key') == "SH.DTH.COMM.ZS" )
-
-##for home in root.findall( 'home/home' ):
-##    print(home.attrib['name'])
