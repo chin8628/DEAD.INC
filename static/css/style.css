@@ -1,11 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 
-html, body{
+html{
 	background-color: #222 !important;
 	width: 100%;
 	height: 100%;
 	font-family: 'Droid Sans', sans-serif;
 	font-size: 16px;
+}
+
+body{
+	margin-bottom: 50px;
+	background: inherit;
 }
 
 h1{
@@ -57,4 +62,17 @@ article.graph{
 
 .tab-content{
 	margin-top: 20px;
+}
+
+/* country list's css */
+.table-country{
+	width: 100%;
+}
+
+.table-country td, th{
+	width: 25%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #666;
+    padding-left: 10px;
 }
