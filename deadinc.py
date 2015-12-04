@@ -4,10 +4,10 @@ from web import form
 render = web.template.render('templates/', base='layout')
 
 urls = (
-            '/', 'Index',
-            '/result', 'Result',
-            '/country', 'Country',
-            '/about', 'About'
+            '/?', 'Index',
+            '/result/?', 'Result',
+            '/country/?', 'Country',
+            '/about/?', 'About'
         )
 
 class Index:
