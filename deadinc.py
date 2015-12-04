@@ -5,7 +5,7 @@ render = web.template.render('templates/', base='layout')
 
 urls = (
             '/?', 'Index',
-            '/result/?', 'Result',
+            '/result/?(.+)', 'Result',
             '/country/?', 'Country',
             '/about/?', 'About'
         )
@@ -15,11 +15,10 @@ class Index:
         return render.index()
     def POST(self):
         country = web.input()
-        image = country.country.lower() + ".svg"
-        return render.result(country.country, image)
+        raise web.seeother("result/" + country.country)
 
 class Result:
-    def GET(self, country="Thailand"):
+    def GET(self, country):
         image = country.lower() + ".svg"
         return render.result(country, image)
 
