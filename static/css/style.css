@@ -51,9 +51,10 @@ h1{
 
 /* result's page css */
 
-.world-map img{
+.world-map{
 	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-bottom: 80px;
+	height: 500px;
 }
 
 article.graph{

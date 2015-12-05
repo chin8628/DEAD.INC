@@ -1,6 +1,7 @@
 import web
 from web import form
 from convert_country import *
+from iso3166 import countries
 
 
 render = web.template.render('templates/', base='layout')
@@ -26,11 +27,11 @@ class Result:
         return render.result({
                                 "title": country.replace("-", " ").capitalize(),
                                 "image": image,
-                                "url_to_graph_crude": "../static/svg/" +  full_to_short_country(country.replace(" ", "-")) + "_Death_rate_crude_(per_1000_people).svg",
-                                "url_to_graph_under_five": "../static/svg/" +  full_to_short_country(country.replace(" ", "-")) + "_Number_of_under-five_deaths.svg",
-                                "url_to_graph_injury": "../static/svg/" +  full_to_short_country(country.replace(" ", "-")) + "_Cause_of_death_by_injury_(%_of_total).svg",
-                                "url_to_graph_battle": "../static/svg/" +  full_to_short_country(country.replace(" ", "-")) + "_Battle-related_deaths_(number_of_people).svg",
-                                "url_to_graph_population": "../static/svg/" +  full_to_short_country(country.replace(" ", "-")) + "_Population_total.svg"
+                                "url_to_graph_crude": "../static/svg/" +  countries.get((country.replace(" ", "-")))[2] + "_Death_rate_crude_(per_1000_people).svg",
+                                "url_to_graph_under_five": "../static/svg/" +  countries.get((country.replace(" ", "-")))[2] + "_Number_of_under-five_deaths.svg",
+                                "url_to_graph_injury": "../static/svg/" +  countries.get((country.replace(" ", "-")))[2] + "_Cause_of_death_by_injury_(%_of_total).svg",
+                                "url_to_graph_battle": "../static/svg/" +  countries.get((country.replace(" ", "-")))[2] + "_Battle-related_deaths_(number_of_people).svg",
+                                "url_to_graph_population": "../static/svg/" +  countries.get((country.replace(" ", "-")))[2] + "_Population_total.svg"
                             })
 
 class Country:
