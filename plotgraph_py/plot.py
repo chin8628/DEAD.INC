@@ -1,7 +1,7 @@
 import pygal, glob
 
 def create_graph(file_name, title, value):
-    line_chart = pygal.Bar(width=1000, x_label_rotation=90)
+    line_chart = pygal.Bar(width=1000, height=500, x_label_rotation=90)
     line_chart.title = title
     line_chart.x_labels = map(str, range(1960, 2015))
     line_chart.add(title, value)
