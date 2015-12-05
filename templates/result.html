@@ -1,11 +1,11 @@
-$def with(country, image)
+$def with(value)
 <section class="container index">
 
-    <h1 class="title">$country<hr></h1>
+    <h1 class="title">$value['title']<hr></h1>
 
     <div class="row">
         <div class="world-map col-md-10 col-md-offset-1">
-            <img src="/static/img/$image" width="100%">
+            <img src="/static/img/$value['image']" width="100%">
         </div>
     </div>
 
@@ -15,27 +15,29 @@ $def with(country, image)
 
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#crude" aria-controls="crude" role="tab" data-toggle="tab">Crude Deaths</a></li>
+                <li role="presentation"><a href="#population" aria-controls="population" role="tab" data-toggle="tab">Total Population</a></li>
                 <li role="presentation"><a href="#under_five" aria-controls="under_five" role="tab" data-toggle="tab">Under-five Deaths</a></li>
+                <li role="presentation" class="active"><a href="#crude" aria-controls="crude" role="tab" data-toggle="tab">Crude Deaths</a></li>
                 <li role="presentation"><a href="#injury" aria-controls="injury" role="tab" data-toggle="tab">Injury Deaths</a></li>
                 <li role="presentation"><a href="#battle" aria-controls="battle" role="tab" data-toggle="tab">Battle-related deaths</a></li>
             </ul>
 
             <!-- Tab panes -->
             <div class="tab-content container">
-                <div role="tabpanel" class="tab-pane active" id="crude">
-                    <div class="col-md-10 col-md-offset-1">
-                        <embed type="image/svg+xml" src="/static/svg/bar_chart.svg"  />
-                    </div>
+                <div role="tabpanel" class="tab-pane" id="population">
+                    <embed type="image/svg+xml" src="$value['url_to_graph_population']" width="95%" />
                 </div>
                 <div role="tabpanel" class="tab-pane" id="under_five">
-                    <img src="/static/img/graphs_7.jpg" alt="" height="50%" width="100%">
+                    <embed type="image/svg+xml" src="$value['url_to_graph_under_five']" width="95%" />
+                </div>
+                <div role="tabpanel" class="tab-pane active text-center" id="crude">
+                    <embed type="image/svg+xml" src="$value['url_to_graph_crude']" width="95%" />
                 </div>
                 <div role="tabpanel" class="tab-pane" id="injury">
-                    <img src="/static/img/graphs_7.jpg" alt="" height="50%" width="100%">
+                    <embed type="image/svg+xml" src="$value['url_to_graph_injury']" width="95%" />
                 </div>
                 <div role="tabpanel" class="tab-pane" id="battle">
-                    <img src="/static/img/graphs_7.jpg" alt="" height="50%" width="100%">
+                    <embed type="image/svg+xml" src="$value['url_to_graph_battle']" width="95%" />
                 </div>
             </div>
 
