@@ -21,6 +21,7 @@ class Index:
 
 class Result:
     def GET(self, country):
+        country = country.lower()
         image = country.lower() + ".svg"
         return render.result({
                                 "title": country.replace("-", " ").capitalize(),
