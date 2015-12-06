@@ -2,16 +2,16 @@ $(function(){
     $('#world-map').vectorMap({
                                 map: 'world_mill',
                                 backgroundColor: "#222",
+                                selectedRegions: country_code,
                                 regionStyle: {
                                                 initial: {
-                                                    "fill": 'white'
+                                                    "fill": '#888'
                                                 },
                                                 hover: {
-                                                    "fill": 'blue',
-                                                    "fill-opacity": 0.6,
-                                                }
+                                                    "fill": '#EEE'
+                                                },
                                                 selected: {
-                                                    fill: 'yellow'
+                                                    'fill': '#ffee58'
                                                 },
                                             }
                             });
