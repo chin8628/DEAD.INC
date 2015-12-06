@@ -77,3 +77,10 @@ article.graph{
     border-bottom: 1px solid #666;
     padding-left: 10px;
 }
+
+.autocomplete-suggestions {
+	border: 1px solid #999;
+	background: #999;
+	overflow: auto;
+}
+.autocomplete-selected { background: #F0F0F0; }

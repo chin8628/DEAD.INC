@@ -8,11 +8,17 @@ $(function(){
                                                     "fill": '#888'
                                                 },
                                                 hover: {
-                                                    "fill": '#EEE'
+                                                    "fill": '#EEE',
+                                                    cursor: 'default'
                                                 },
                                                 selected: {
                                                     'fill': '#ffee58'
                                                 },
                                             }
                             });
+});
+
+
+$('#form-index').autocomplete({
+    lookup: countries,
 });
