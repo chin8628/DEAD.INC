@@ -13,7 +13,7 @@
 python deadinc.py <port>
 ```
 
-Credits.
+### Credits.
 
 1. jVectorMap (http://jvectormap.com/)
 2. World Bank Open Data (http://data.worldbank.org/)
