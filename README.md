@@ -1,5 +1,4 @@
 # DEAD.INC
-## Web.py
 ### Requirement
 
 1. Web.py (http://webpy.org/install)
