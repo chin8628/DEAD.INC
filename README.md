@@ -1,6 +1,14 @@
 # DEAD.INC
-### Requirement
+## Introduction
 
+DEAD.INC is a web application that contain statistics of death around the world in 1993 - 2014.
+
+Our main goal is to push some interest to death around the world, so we know what happened at that time as part of history.
+And here we are, creating statistic web application that is easy to use and read.
+
+## Running the App
+
+### Requirement
 1. Web.py (http://webpy.org/install)
 2. Pygal (http://www.pygal.org)
 3. iso3166 (https://pypi.python.org/pypi/iso3166/0.6)
