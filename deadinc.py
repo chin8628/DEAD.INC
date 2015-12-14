@@ -29,7 +29,7 @@ class Result:
                                 "image": image,
                                 "url_to_graph_crude": "../static/svg/" +  full_to_short_country((country.replace(" ", "-"))).lower() + "_Death_rate_crude_(per_1000_people).svg",
                                 "url_to_graph_under_five": "../static/svg/" +  full_to_short_country((country.replace(" ", "-"))).lower() + "_Number_of_under-five_deaths.svg",
-                                "url_to_graph_injury": "../static/svg/" +  full_to_short_country((country.replace(" ", "-"))).lower() + "_Cause_of_death_by_injury_(%_of_total).svg",
+                                "url_to_graph_injury": "../static/svg/" +  full_to_short_country((country.replace(" ", "-"))).lower() + "_Cause_of_death_by_injury_%28%25_of_total%29.svg",
                                 "url_to_graph_battle": "../static/svg/" +  full_to_short_country((country.replace(" ", "-"))).lower() + "_Battle-related_deaths_(number_of_people).svg",
                                 "url_to_graph_population": "../static/svg/" +  full_to_short_country((country.replace(" ", "-"))).lower() + "_Population_total.svg",
                                 "country_code_2_letter": countries.get(full_to_short_country((country.replace(" ", "-"))))[1]
