@@ -1,0 +1,50 @@
+$def with(value)
+<section class="container index">
+
+    <h1 class="title">$value['title']<hr></h1>
+
+    <div class="row">
+        <div class="world-map col-md-10 col-md-offset-1" id="world-map"></div>
+    </div>
+
+    <article class="container graph">
+
+        <div>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#population" aria-controls="population" role="tab" data-toggle="tab">Total Population</a></li>
+                <li role="presentation"><a href="#under_five" aria-controls="under_five" role="tab" data-toggle="tab">Under-five Deaths</a></li>
+                <li role="presentation"><a href="#crude" aria-controls="crude" role="tab" data-toggle="tab">Crude Deaths</a></li>
+                <li role="presentation"><a href="#injury" aria-controls="injury" role="tab" data-toggle="tab">Injury Deaths</a></li>
+                <li role="presentation"><a href="#battle" aria-controls="battle" role="tab" data-toggle="tab">Battle-related deaths</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content container">
+                <div role="tabpanel" class="tab-pane active text-center" id="population">
+                    <embed type="image/svg+xml" src="$value['url_to_graph_population']" width="95%" />
+                </div>
+                <div role="tabpanel" class="tab-pane text-center" id="under_five">
+                    <embed type="image/svg+xml" src="$value['url_to_graph_under_five']" width="95%" />
+                </div>
+                <div role="tabpanel" class="tab-pane text-center" id="crude">
+                    <embed type="image/svg+xml" src="$value['url_to_graph_crude']" width="95%" />
+                </div>
+                <div role="tabpanel" class="tab-pane text-center" id="injury">
+                    <embed type="image/svg+xml" src="$value['url_to_graph_injury']" width="95%" />
+                </div>
+                <div role="tabpanel" class="tab-pane text-center" id="battle">
+                    <embed type="image/svg+xml" src="$value['url_to_graph_battle']" width="95%" />
+                </div>
+            </div>
+
+        </div>
+
+    </article>
+
+</section>
+
+<script>
+var country_code = "$value['country_code_2_letter']"
+</script>
