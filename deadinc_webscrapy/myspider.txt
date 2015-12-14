@@ -1,0 +1,154 @@
+2015-11-15 00:07:38 [scrapy] INFO: Scrapy 1.0.3 started (bot: DEAD_INC)
+2015-11-15 00:07:38 [scrapy] INFO: Optional features available: ssl, http11
+2015-11-15 00:07:38 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'DEAD_INC.spiders', 'SPIDER_MODULES': ['DEAD_INC.spiders'], 'LOG_FILE': 'myspider.txt', 'BOT_NAME': 'DEAD_INC'}
+2015-11-15 00:07:38 [scrapy] INFO: Enabled extensions: CloseSpider, TelnetConsole, LogStats, CoreStats, SpiderState
+2015-11-15 00:07:38 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-11-15 00:07:38 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-11-15 00:07:38 [scrapy] INFO: Enabled item pipelines: 
+2015-11-15 00:07:38 [scrapy] INFO: Spider opened
+2015-11-15 00:07:38 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-11-15 00:07:38 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6029
+2015-11-15 00:07:39 [scrapy] DEBUG: Crawled (200) <GET http://data.worldbank.org/country/afghanistan> (referer: None)
+2015-11-15 00:07:39 [scrapy] DEBUG: Crawled (200) <GET http://data.worldbank.org/country/albania> (referer: None)
+2015-11-15 00:07:39 [scrapy] DEBUG: Crawled (200) <GET http://data.worldbank.org/country/andorra> (referer: None)
+2015-11-15 00:07:39 [scrapy] DEBUG: Crawled (200) <GET http://data.worldbank.org/country/antigua-and-barbuda> (referer: None)
+2015-11-15 00:07:39 [scrapy] DEBUG: Crawled (200) <GET http://data.worldbank.org/country/L5> (referer: None)
+2015-11-15 00:07:39 [scrapy] ERROR: Spider error processing <GET http://data.worldbank.org/country/afghanistan> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/cloudian/DEAD_INC/DEAD_INC/spiders/test.py", line 25, in parse
+    print "Order:", cnt, "Downloading...", link[0]
+NameError: global name 'cnt' is not defined
+2015-11-15 00:07:39 [scrapy] ERROR: Spider error processing <GET http://data.worldbank.org/country/albania> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/cloudian/DEAD_INC/DEAD_INC/spiders/test.py", line 25, in parse
+    print "Order:", cnt, "Downloading...", link[0]
+NameError: global name 'cnt' is not defined
+2015-11-15 00:07:39 [scrapy] ERROR: Spider error processing <GET http://data.worldbank.org/country/andorra> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/cloudian/DEAD_INC/DEAD_INC/spiders/test.py", line 25, in parse
+    print "Order:", cnt, "Downloading...", link[0]
+NameError: global name 'cnt' is not defined
+2015-11-15 00:07:39 [scrapy] ERROR: Spider error processing <GET http://data.worldbank.org/country/antigua-and-barbuda> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/cloudian/DEAD_INC/DEAD_INC/spiders/test.py", line 25, in parse
+    print "Order:", cnt, "Downloading...", link[0]
+NameError: global name 'cnt' is not defined
+2015-11-15 00:07:39 [scrapy] ERROR: Spider error processing <GET http://data.worldbank.org/country/L5> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/cloudian/DEAD_INC/DEAD_INC/spiders/test.py", line 25, in parse
+    print "Order:", cnt, "Downloading...", link[0]
+NameError: global name 'cnt' is not defined
+2015-11-15 00:07:39 [scrapy] DEBUG: Crawled (200) <GET http://data.worldbank.org/country/american-samoa> (referer: None)
+2015-11-15 00:07:39 [scrapy] DEBUG: Crawled (200) <GET http://data.worldbank.org/country/angola> (referer: None)
+2015-11-15 00:07:39 [scrapy] DEBUG: Crawled (200) <GET http://data.worldbank.org/country/algeria> (referer: None)
+2015-11-15 00:07:39 [scrapy] ERROR: Spider error processing <GET http://data.worldbank.org/country/american-samoa> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/cloudian/DEAD_INC/DEAD_INC/spiders/test.py", line 25, in parse
+    print "Order:", cnt, "Downloading...", link[0]
+NameError: global name 'cnt' is not defined
+2015-11-15 00:07:39 [scrapy] ERROR: Spider error processing <GET http://data.worldbank.org/country/angola> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/cloudian/DEAD_INC/DEAD_INC/spiders/test.py", line 25, in parse
+    print "Order:", cnt, "Downloading...", link[0]
+NameError: global name 'cnt' is not defined
+2015-11-15 00:07:39 [scrapy] ERROR: Spider error processing <GET http://data.worldbank.org/country/algeria> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/cloudian/DEAD_INC/DEAD_INC/spiders/test.py", line 25, in parse
+    print "Order:", cnt, "Downloading...", link[0]
+NameError: global name 'cnt' is not defined
+2015-11-15 00:07:40 [scrapy] DEBUG: Crawled (200) <GET http://data.worldbank.org/country/aruba> (referer: None)
+2015-11-15 00:07:40 [scrapy] DEBUG: Crawled (200) <GET http://data.worldbank.org/country/austria> (referer: None)
+2015-11-15 00:07:40 [scrapy] DEBUG: Crawled (200) <GET http://data.worldbank.org/country/argentina> (referer: None)
+2015-11-15 00:07:40 [scrapy] ERROR: Spider error processing <GET http://data.worldbank.org/country/aruba> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/cloudian/DEAD_INC/DEAD_INC/spiders/test.py", line 25, in parse
+    print "Order:", cnt, "Downloading...", link[0]
+NameError: global name 'cnt' is not defined
+2015-11-15 00:07:40 [scrapy] ERROR: Spider error processing <GET http://data.worldbank.org/country/austria> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/cloudian/DEAD_INC/DEAD_INC/spiders/test.py", line 25, in parse
+    print "Order:", cnt, "Downloading...", link[0]
+NameError: global name 'cnt' is not defined
+2015-11-15 00:07:40 [scrapy] ERROR: Spider error processing <GET http://data.worldbank.org/country/argentina> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/cloudian/DEAD_INC/DEAD_INC/spiders/test.py", line 25, in parse
+    print "Order:", cnt, "Downloading...", link[0]
+NameError: global name 'cnt' is not defined
+2015-11-15 00:07:40 [scrapy] DEBUG: Crawled (200) <GET http://data.worldbank.org/country/armenia> (referer: None)
+2015-11-15 00:07:40 [scrapy] DEBUG: Crawled (200) <GET http://data.worldbank.org/country/australia> (referer: None)
+2015-11-15 00:07:40 [scrapy] ERROR: Spider error processing <GET http://data.worldbank.org/country/armenia> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/cloudian/DEAD_INC/DEAD_INC/spiders/test.py", line 25, in parse
+    print "Order:", cnt, "Downloading...", link[0]
+NameError: global name 'cnt' is not defined
+2015-11-15 00:07:40 [scrapy] ERROR: Spider error processing <GET http://data.worldbank.org/country/australia> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/cloudian/DEAD_INC/DEAD_INC/spiders/test.py", line 25, in parse
+    print "Order:", cnt, "Downloading...", link[0]
+NameError: global name 'cnt' is not defined
+2015-11-15 00:07:40 [scrapy] DEBUG: Crawled (200) <GET http://data.worldbank.org/country/bahrain> (referer: None)
+2015-11-15 00:07:40 [scrapy] ERROR: Spider error processing <GET http://data.worldbank.org/country/bahrain> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/cloudian/DEAD_INC/DEAD_INC/spiders/test.py", line 25, in parse
+    print "Order:", cnt, "Downloading...", link[0]
+NameError: global name 'cnt' is not defined
+2015-11-15 00:07:40 [scrapy] DEBUG: Crawled (200) <GET http://data.worldbank.org/country/bangladesh> (referer: None)
+2015-11-15 00:07:40 [scrapy] ERROR: Spider error processing <GET http://data.worldbank.org/country/bangladesh> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/cloudian/DEAD_INC/DEAD_INC/spiders/test.py", line 25, in parse
+    print "Order:", cnt, "Downloading...", link[0]
+NameError: global name 'cnt' is not defined
+2015-11-15 00:07:41 [scrapy] DEBUG: Crawled (200) <GET http://data.worldbank.org/country/belize> (referer: None)
+2015-11-15 00:07:41 [scrapy] ERROR: Spider error processing <GET http://data.worldbank.org/country/belize> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/cloudian/DEAD_INC/DEAD_INC/spiders/test.py", line 25, in parse
+    print "Order:", cnt, "Downloading...", link[0]
+NameError: global name 'cnt' is not defined
+2015-11-15 00:07:41 [scrapy] DEBUG: Crawled (200) <GET http://data.worldbank.org/country/benin> (referer: None)
+2015-11-15 00:07:41 [scrapy] ERROR: Spider error processing <GET http://data.worldbank.org/country/benin> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/cloudian/DEAD_INC/DEAD_INC/spiders/test.py", line 25, in parse
+    print "Order:", cnt, "Downloading...", link[0]
+NameError: global name 'cnt' is not defined
+2015-11-15 00:07:41 [scrapy] DEBUG: Crawled (200) <GET http://data.worldbank.org/country/bhutan> (referer: None)
+2015-11-15 00:07:42 [scrapy] ERROR: Spider error processing <GET http://data.worldbank.org/country/bhutan> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/cloudian/DEAD_INC/DEAD_INC/spiders/test.py", line 25, in parse
+    print "Order:", cnt, "Downloading...", link[0]
+NameError: global name 'cnt' is not defined

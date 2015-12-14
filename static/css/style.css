@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+html{
+	background-color: #222 !important;
+	width: 100%;
+	height: 100%;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 16px;
+}
+
+body{
+	margin-bottom: 50px;
+	background: inherit;
+	color: #CCC;
+}
+
+h1{
+	font-size: 3em;
+}
+
+.title{
+	color: white;
+}
+
+/* index css */
+
+.middle-page{
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+	width: 100%;
+	height: 70%;
+}
+
+#form-index{
+	color: white;
+	text-align: center;
+	margin-top: 40px;
+	font-size: 2em;
+	height: 68px;
+	background: rgba(0, 0, 0, 0);
+	border-color: white;
+	width: 100%;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+#form-index:focus {
+    outline:none;
+}
+
+/* result's page css */
+
+.world-map{
+	margin-top: 20px;
+	margin-bottom: 30px;
+	height: 400px;
+}
+
+article.graph{
+
+}
+
+.tab-content{
+	margin-top: 20px;
+}
+
+/* country list's css */
+.table-country{
+	width: 100%;
+}
+
+.table-country td, th{
+	width: 25%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #666;
+    padding-left: 10px;
+}
+
+.autocomplete-suggestions {
+	border: 1px solid #999;
+	background: #999;
+	overflow: auto;
+}
+.autocomplete-selected { background: #F0F0F0; }
